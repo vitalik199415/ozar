@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /cart/
+Sitemap: http://ozar.company/users_app/777/sitemap.xml

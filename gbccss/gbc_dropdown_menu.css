@@ -1,0 +1,93 @@
+#gbc_dropdown_menu, #gbc_dropdown_menu ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+#gbc_dropdown_menu > li {
+	float:left;
+	padding:0px !IMPORTANT;
+	margin:0px !IMPORTANT;
+	position:relative;
+}
+
+#gbc_dropdown_menu li a {
+	margin:0px !IMPORTANT;
+	display: block;
+	text-align:left;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	background:url(/designadmin/menu_polos.jpg) no-repeat right top;
+	padding:0 10px 0 12px;
+	font-size:13px;
+	line-height:13px;
+}
+
+#gbc_dropdown_menu li a:hover {
+	background:url(/designadmin/menu_polos.jpg) no-repeat right bottom;
+}
+
+#gbc_dropdown_menu li a p {
+	margin:0px;
+	padding:10px 0 13px 0;
+}
+
+#gbc_dropdown_menu li ul a {
+	background:url(/designadmin/vmenu_rep.jpg) repeat-x top;
+	font-size:12px;
+	line-height:12px;
+	font-weight:normal;
+	border:1px solid #333333;
+	width:105% !important;
+}
+#gbc_dropdown_menu li ul a:hover {
+	background:url(/designadmin/vmenu_rep.jpg) repeat-x bottom;
+}
+	
+#gbc_dropdown_menu li ul a p {
+	padding:7px 0 7px 0;
+}
+
+#gbc_dropdown_menu li ul {
+	list-style: none;
+	position: absolute;
+	z-index: 90;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	display: none;   /* IMPORTANT!! This property needs to be present for the plugin to work! And no, */
+							/* display:none will NOT do! */
+}
+
+#gbc_dropdown_menu li ul li {
+	float: none;
+	display: inline;
+}
+
+#gbc_dropdown_menu li ul li ul {
+	margin: -28px 0 0 0;
+	margin-left:119%;
+	/*right:0px;*/
+	position: absolute;
+}
+
+#gbc_dropdown_menu span {
+	float: right;
+}
+
+#gbc_dropdown_menu .str p {
+	background:url(/designadmin/vmenu_strel.png) right no-repeat;
+}
+
+/*#top_drop-down-menu li ul li a
+{
+	width: auto;
+	background: #A9C251;
+	color: #24313C;
+}
+
+#top_drop-down-menu li ul li a:hover
+{
+	background: #8EA344;
+}*/

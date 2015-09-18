@@ -1,0 +1,13 @@
+@media print {
+.print_block{
+font-size:14pt;
+background-color:#FFFFFF;
+color:#000000;
+}
+.pt16{
+font-size:16pt;
+}
+.pt18{
+font-size:18pt;
+}
+}

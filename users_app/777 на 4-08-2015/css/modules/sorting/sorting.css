@@ -1,0 +1,146 @@
+.sort_block{
+	border-bottom:solid 1px #e2e1dc;
+	padding:0px 20px 10px 0;
+	margin-bottom:10px;
+	text-align:left;
+	width: 100%;
+}
+.sort_block a.drop_link{
+	color:#979797;
+	font-size:13px;
+	cursor:pointer;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sort_block a.drop_link:after{
+	content: "▾";
+	font-size: 18px;
+	color: #41b495;
+}
+#active_sort{
+	color: #424242;
+}
+.sort_block #sort{
+	float:left;
+	margin-top:5px;
+	position:relative;
+}
+#drop_container{
+	position:absolute;
+	width:200px;
+	border: 1px solid #CCC;
+	z-index: 999;
+	padding:10px;
+	background: #fff;
+	font-size: 13px;
+	margin-top: 5px;
+	left:0px;
+}
+#drop_container .block{
+	border-bottom:solid 1px #CCC;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+#drop_container .block:last-of-type{
+	margin:0;
+	padding:0;
+	border:none
+}
+.products_per_page span{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: 15px;
+}
+.property{
+}
+.checkbox{
+	float:left;
+	padding: 0px 3px;
+}
+.checkbox label{
+
+}
+.checkbox_name{
+	font-size:13px;
+	cursor:pointer;
+	display: inline-block;
+	padding: 1px;
+}
+.checkbox_name:hover, .sort_block a.drop_link:hover{
+	color: #41b495;
+}
+.products_per_page{
+	float:right;
+	margin:5px 0 0 0;
+}
+.products_per_page .property{
+	font-size:13px;
+}
+.products_show_type .list-style-buttons { 
+	float:right;
+	display:none
+}
+.products_show_type a.active{cursor: default !important}
+
+#products_per_page-menu .ui-state-hover,
+#products_per_page-menu .ui-widget-content .ui-state-hover,
+#products_per_page-menu .ui-widget-header .ui-state-hover,
+#products_per_page-menu .ui-state-focus,
+#products_per_page-menu .ui-widget-content .ui-state-focus,
+#products_per_page-menu .ui-widget-header .ui-state-focus {
+	border: none;
+	background:#000;
+	font-weight: normal;
+	color:inherit;
+	border: 1px solid #999;
+	background: url(/design/icons/ui-bg_glass_75_dadada_1x400.png) repeat-x scroll 50% 50% #DADADA !important;
+	font-weight: normal;
+	color: #212121;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #D3D3D3;
+    background: url(design/icons/ui-bg_glass_75_e6e6e6_1x400.png) repeat-x scroll 50% 50% #E6E6E6;
+    font-weight: normal;
+    color: #555;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.sort_block .ui-selectmenu-button span.ui-selectmenu-text {
+	padding:0 0 0 5px !important;
+}
+.ui-selectmenu-button {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sort_block .ui-state-focus, .sort_block .ui-widget-content .ui-state-focus{
+	border: 1px solid #fff;
+	/*background: url(/design/icons/ui-bg_glass_75_dadada_1x400.png) repeat-x scroll 50% 50% #DADADA !important;*/
+	font-weight: normal;
+	color: #212121 !important;
+}
+.ui-selectmenu-menu .ui-menu {
+   border: solid 1px #d3d3d2;
+}
+.ui-selectmenu-button span.ui-icon{
+	right: -15px;
+	color: #f00;
+}

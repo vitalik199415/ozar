@@ -1,0 +1,39 @@
+.pages_block{
+background:#444444;
+border:2px solid #666666;
+margin:5px 0 5px 0;
+padding:4px 8px 4px 8px;
+font-size:13px;
+color:#FFFFFF;
+
+text-align:left;
+}
+.pages_block .page{
+display:block;
+color:#FFFFFF;
+font-weight:bold;
+float:left;
+margin:0 2px 0 2px;
+padding:0px;
+text-decoration:none;
+}
+.pages_block .page:hover{
+text-decoration:underline;
+color:#FF9900;
+padding:1px 0 0 0;
+}
+.pages_block .page_act{
+display:block;
+color:#DDDDDD;
+font-weight:bold;
+float:left;
+margin:0 2px 0 2px;
+padding:1px 0 0 0;
+text-decoration:none;
+cursor:default;
+}
+.pages_block .point{
+float:left;
+margin:0 5px 0 5px;
+cursor:default;
+}

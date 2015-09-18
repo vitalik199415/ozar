@@ -1,0 +1,45 @@
+<div align="center" class="product_view">
+<div class="block" style="overflow:hidden;">
+<div id="view_product">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td valign="top" width="1">
+		<div class="product_images">
+			<?php
+			foreach($images as $key => $ms)
+			{
+			?>
+			<div class="image_div">
+				<a href="<?=$ms['bimage']?>" class="highslide" onclick="return hs.expand(this)"><img src="<?=$ms['timage']?>"></a>
+			</div>
+			<?php
+			}
+			?>
+		</div>
+	</td>
+	<td valign="top" align="left">	
+		<div class="name"><span><?=$product['name']?></span></div>
+		<div class="sku">Артикул : <span><?=$product['sku']?></span></div>
+		<input type="hidden" name="product_id" value="<?=$product['ID']?>">
+		<?php
+		if(isset($prices))
+		{
+			echo $prices;
+		}
+		if(isset($attributes))
+		{
+			echo $attributes;
+		}
+		?>
+		<div class="select_qty">
+			Количество : <?=form_input(array('name' => 'qty', 'value' => '1'));?> <a href="<?=setUrl('*/*/ajax_add_product_to_cart/ord_id/'.$ord_id)?>" id="to_cart">В Корзину</a>
+		</div>
+		<div class="description"><?=$product['full_description']?></div>
+	</td>
+</tr>
+</table>
+</div>
+</div>
+<script language="javascript">
+	//$('#products_to_cart').gbc_products_cart('init_add_product', {price_attributes : price_attributes});
+</script>

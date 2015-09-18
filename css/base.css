@@ -1,0 +1,309 @@
+pre{
+margin:0;
+padding:0;
+font-family:inherit;
+}
+.loading{
+position:fixed;
+top: 0;
+left: 0;
+text-align:center;
+z-index:99999 !important;
+width: 100%;
+height: 100%;
+background:#3a3a3a url(/design/commerce_corporate_dark/loading.gif) no-repeat center center;
+display:none;
+}
+.visible{
+display:block !important;
+}
+.hidden{
+display:none !important;
+}
+.visibility_visible{
+visibility:visible !important;
+}
+.visibility_hidden{
+visibility:hidden !important;
+}
+.clear_both{
+clear:both;
+height:0px;
+line-height:0px;
+font-size:0px;
+}
+input, select{
+outline:none;
+}
+
+/* the overlayed element */
+.JQ_tools_overlay {
+	display:none;
+	z-index:9001;
+	background:url(/design/commerce_corporate_dark/overlay/top_panel.png) top repeat-x;
+	background-color:#333333;
+	width:80%;
+	height:80%;
+	text-align:center;
+	position:fixed;
+	margin:auto 10%;
+	left:0;
+	border:4px solid #666666;
+	padding:27px 0 0 0;
+}
+/* close button positioned on upper right corner */
+.JQ_tools_overlay .close{
+	background:url(/design/commerce_corporate_dark/overlay/i_delete.png) left;
+	position:absolute;
+	right:5px;
+	top:3px;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+}
+.JQ_tools_overlay .close:hover{
+background:url(/design/commerce_corporate_dark/overlay/i_delete.png) right;
+}
+.JQ_tools_overlay .JQ_tools_overlay_content{
+height:100%;
+overflow:auto;
+}
+
+/* the overlayed element */
+.JQ_tools_overlay_20 {
+	display:none;
+	z-index:9002;
+	width:30%;
+	height:auto;
+	text-align:center;
+	margin:auto 35%;
+	left:0;
+}
+/* close button positioned on upper right corner */
+.JQ_tools_overlay_20 .close{
+
+}
+.JQ_tools_overlay_20 .close:hover{
+
+}
+.JQ_tools_overlay_20 .JQ_tools_overlay_20_content{
+height:100%;
+overflow:auto;
+}
+
+.form_block{
+padding:10px;
+}
+.form_label{
+font-size:22px;
+font-weight:bold;
+text-align:center;
+padding:5px 0 10px 0;
+}
+.field_label{
+font-size:14px;
+}
+.field_value{
+font-size:13px;
+}
+.form_item_block{
+border-radius:5px;
+margin:0 0 10px 0;
+}
+.form_item_inside_block{
+padding:3px 5px;
+}
+.form_fieldset{
+border:2px solid #eebb33;
+border-radius:5px;
+margin:10px 0 10px 0;
+text-align:left;
+padding:6px;
+}
+.form_fieldset legend{
+border:2px solid #eebb33;
+border-radius:5px;
+font-size:16px;
+padding:3px 5px 3px 5px;
+text-align:left;
+font-weight:bold;
+letter-spacing:2px;
+}
+.form_field{
+border:1px solid #666666;
+margin:5px 5px 5px 5px;
+padding:5px 5px 4px 5px;
+text-align:left;
+}
+.form_field label{
+width:40%;
+float:left;
+text-align:left;
+font-size:14px;
+}
+.form_field label.error{
+text-align:left;
+display:block;
+width:auto;
+float:none;
+background-color:#FF9999;
+border:2px solid #DD6666;
+font-size:13px;
+line-height:15px;
+color:#660000;
+margin:3px 0;
+padding:2px 4px;
+border-radius:5px;
+}
+.form_field input, .form_field select, .form_field textarea{
+width:50%;
+float:right;
+border:1px solid #eebb33;
+background:#404040;
+border-radius:5px;
+color:#FFFFFF;
+margin:0px;
+padding:0px;
+}
+.form_field_checkbox{
+text-align:left;
+}
+.form_field_checkbox label{
+width:auto;
+color:#eebb33;
+}
+.form_field_checkbox input{
+float:left;
+width:auto;
+margin:3px 0 0 5px;
+}
+.captcha .form_field input{
+margin:50px 0 50px 0;
+}
+.captcha .form_field img{
+display:block;
+margin:5px 0 2px 0;
+}
+.form_help{
+text-align:left;
+font-size:13px;
+color:#CCCCCC;
+padding:5px 20px;
+}
+.form_button{
+text-align:center;
+padding:10px 0;
+}
+.form_button a{
+font-size:14px;
+line-height:14px;
+letter-spacing:2px;
+height:26px;
+display:inline-block;
+}
+.form_button a:hover{
+
+}
+.form_button a span{
+display:block;
+margin:0 0 0 6px;
+padding:5px 14px 7px 8px;
+}
+.form_button a:hover span{
+
+}
+
+.form_table{
+width:100%;
+}
+.form_table td{
+padding:5px;
+}
+
+.form_message_block{
+display:none;
+}
+.form_message_block .error_message{
+display:none;
+padding:5px;
+margin:10px 5px 10px 5px;
+background-color:#FF9999;
+border:4px solid #DD6666;
+font-size:14px;
+line-height:20px;
+color:#660000;
+border-radius:5px;
+}
+.form_message_block .error_message p{
+background:url(/design/icons/error_massage.png) left center no-repeat;
+padding:3px 0 3px 32px;
+margin:3px 0 3px 0;
+text-align:left;
+}
+.form_message_block .success_message{
+display:none;
+padding:5px;
+margin:10px 5px 10px 5px;
+background-color:#77DD77;
+border:4px solid #44AA44;
+font-size:14px;
+line-height:20px;
+color:#004400;
+border-radius:5px;
+}
+.form_message_block .success_message p{
+background:url(/design/icons/success_massage.png) left center no-repeat;
+padding:3px 0 3px 32px;
+margin:3px 0 3px 0;
+text-align:left;
+}
+
+/*Customer login styles*/
+.customer_login_form .customer_login_block, .customer_fp_form .customer_fp_block, .customer_wa_form .customer_wa_block{
+width:600px;
+}
+.customer_login_form .registration_forgot_password_buttons{
+margin:5px 7px;
+font-size:14px;
+}
+.customer_login_form .registration_forgot_password_buttons .registration_button{
+float:left;
+font-size:14px;
+text-transform:uppercase;
+font-weight:bold;
+}
+.customer_login_form .registration_forgot_password_buttons .forgot_password_button{
+float:right;
+}
+/*Customer login styles*/
+
+/*Cart edit, Checkout styles - no required*/
+.cart_edit_message_block, .favorites_edit_message_block{
+position:fixed;
+width:100%;
+left:0;
+top:0;
+z-index:9999;
+}
+.form_block .total_block{
+text-align:right;
+}
+.form_block .total_block .field_label, .form_block .total_block .field_value{
+font-size:18px;
+}
+.cart_edit_block .form_field label{
+font-size:12px;
+}
+.cart_edit_block .form_field input{
+font-size:12px;
+}
+.form_block .prod_img a img{
+float:left;
+max-width:150px;
+max-height:150px;
+margin:0 3px 3px 0;
+}
+.form_block .prod_img a:hover img{
+
+}
+/*---------Cart edit styles - no required-----------*/

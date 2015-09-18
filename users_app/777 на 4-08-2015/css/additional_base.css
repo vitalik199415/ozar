@@ -1,0 +1,232 @@
+.JQ_tools_overlay {
+	background: #ffffff;
+	border: 2px solid #666;
+}
+.JQ_tools_overlay a{text-decoration:none}
+.JQ_tools_overlay .close{
+	background:url(/users_app/777/img/btn_remove.jpg) top;
+	width:19px;
+	height:19px;
+}
+.JQ_tools_overlay{color:#7f7f7f;}
+.JQ_tools_overlay a{color:#000;}
+.JQ_tools_overlay .close:hover{
+background:url(/users_app/777/img/btn_remove.jpg) bottom;
+}
+.form_help{
+	color:#900;
+}
+.form_button a {
+	letter-spacing:0;
+	margin:5px 0 5px 0;
+	padding: 6px 15px 6px 15px;
+	font: normal 13px/30px "Times New Roman",Times,serif;
+	text-align: center;
+	white-space: nowrap;
+	color: #fff;
+	text-transform: uppercase;
+	background: #38B492;
+	font-weight: normal;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border:none;
+}
+.form_button a:hover{
+	background:#000;
+	border:none;
+}
+
+.cart_edit_block .cart_edit_products{
+border: 1px solid #ececec;
+border-bottom:none;
+}
+.cart_edit_block .cart_edit_products td{
+border-bottom: 1px solid #ececec;
+font-size:12px;
+padding:5px;
+}
+.cart_edit_block .prod_img{
+float:left;
+margin:0 5px 0 0;
+}
+.cart_edit_block .prod_img img{
+border: 1px solid #ececec;
+}
+.cart_edit_block .prod_name{
+font-size:16px;
+margin:0 0 3px 0;
+}
+.cart_edit_block .cart_edit_buttons{
+width:150px;
+text-align:center;
+}
+.cart_edit_block .cart_edit_attributes input, .cart_edit_block .cart_edit_attributes select{
+float:right;
+width:40%;
+display:block;
+height:20px;
+background: #fcfcfc;
+border: 1px solid #d4d4d4;
+color:#000;
+line-height:16px;
+padding: 0 0 0 2px;
+font-size:14px;
+font: 12px Arial,Helvetica,sans-serif;
+vertical-align: middle;
+color: #000;
+}
+.cart_edit_block .cart_edit_attributes select option{
+background-color:#666;
+}
+.customer_login_form .customer_login_block, .customer_fp_form .customer_fp_block, .customer_wa_block{
+width:600px;
+margin:20px auto;
+padding:10px;
+border: 1px solid #ececec;
+}
+.create_order_form .form_label, .customer_registration_form .form_label, .customer_login_form .form_label, .customer_fp_form .form_label, .customer_wa_form .form_label{
+text-align:center;
+padding: 0 0 15px 0;
+border-bottom: 1px solid #e6e6e6;
+font-size: 13px;
+text-transform: uppercase;
+color: #38B492;
+}
+.create_order_form fieldset, .customer_registration_form fieldset{
+border: 2px solid #e6e6e6;
+margin:10px 0 10px 0;
+text-align:left;
+}
+.create_order_form fieldset legend, .customer_registration_form fieldset legend{
+border: 2px solid #e6e6e6;
+font-size:14px;
+padding:3px 5px 3px 5px;
+text-align:left;
+font-weight:bold;
+}
+.create_order_form .order_field, .customer_registration_form .registration_field, .customer_login_form .login_field, .customer_fp_form .fp_field, .customer_wa_form .wa_field{
+border: 1px solid #e6e6e6;
+margin:5px 5px 5px 5px;
+padding:5px 5px 4px 5px;
+text-align:left;
+}
+
+.create_order_form .order_field label, .customer_registration_form .registration_field label, .customer_login_form .login_field label, .customer_fp_form .fp_field label, .customer_wa_form .wa_field label{
+width:40%;
+float:left;
+text-align:left;
+font-size:14px;
+color:#000;
+}
+.create_order_form .order_field label.error, .customer_registration_form .registration_field label.error, .customer_login_form .login_field label.error, .customer_fp_form .fp_field label.error, .customer_wa_form .wa_field label.error{
+text-align:left;
+display:block;
+width:auto;
+float:none;
+border: 1px dashed #f00!important;
+background: #faebe7!important;
+font-size:13px;
+line-height:15px;
+color:#F00;
+margin:3px 0;
+padding:2px 4px;
+}
+.create_order_form .order_field input, .create_order_form .order_field textarea, .create_order_form .order_field select, .customer_registration_form .registration_field input, .customer_registration_form .registration_field textarea, .customer_registration_form .registration_field select, .customer_login_form .login_field input, .customer_fp_form .fp_field input, .customer_wa_form .wa_field input, .customer_wa_form .wa_field textarea{
+width:50%;
+float:right;
+background: #fcfcfc;
+border: 1px solid #d4d4d4;
+margin:0px;
+padding:0 2px;
+color:#000;
+}
+.customer_registration_form .captcha .registration_field input, .customer_login_form .captcha .login_field input, .customer_fp_form .captcha .fp_field input, .customer_wa_form .captcha .wa_field input{
+margin:50px 0 50px 0;
+margin:50px 0 50px 0;
+}
+.customer_registration_form .captcha .registration_field img, .customer_login_form .captcha .login_field img, .customer_fp_form .captcha .fp_field img, .customer_wa_form .captcha .wa_field img{
+display:block;
+margin:5px 0 2px 0;
+}
+.customer_registration_form .registration_change_password{
+text-align:center;
+}
+.customer_login_form .registration_forgot_password_buttons{
+margin:5px 7px;
+font-size:14px;
+}
+.customer_login_form .registration_forgot_password_buttons .registration_button{
+float:left;
+font-size:14px;
+text-transform:uppercase;
+font-weight:bold;
+}
+.create_order_form .order_products .order_products_label{
+font-size:18px;
+margin:5px 0;
+text-align:center;
+color:#38B492;
+}
+.create_order_form .order_products table{
+border: 1px solid #d4d4d4;
+border-left:1px solid #d4d4d4;
+border-right:1px solid #d4d4d4;
+width:100%;
+font-size:14px;
+}
+.create_order_form .order_products table td{
+border-top:1px solid #d4d4d4;
+border-bottom:1px solid #d4d4d4;
+padding:4px 6px;
+}
+.create_order_form .order_products table .order_products_total div{
+font-size:13px;
+line-height:18px;
+margin:5px 0px;
+}
+.form_massage_block .error_massage{
+display:none;
+padding:5px;
+margin:10px 5px 10px 5px;
+border: 1px dashed #f00!important;
+background: #faebe7!important;
+font-size:14px;
+line-height:20px;
+color:#660000;
+}
+.form_massage_block .error_massage p{
+background:url(/design/icons/error_massage.png) left center no-repeat;
+padding:3px 0 3px 32px;
+margin:3px 0 3px 0;
+text-align:left;
+}
+.form_massage_block .success_massage{
+display:none;
+padding:5px;
+margin:10px 5px 10px 5px;
+background-color:#77DD77;
+border:2px solid #44AA44;
+font-size:14px;
+line-height:20px;
+color:#004400;
+}
+.form_massage_block .success_massage p{
+background:url(/design/icons/success_massage.png) left center no-repeat;
+padding:3px 0 3px 32px;
+margin:3px 0 3px 0;
+text-align:left;
+}
+.form_item_block{
+	border: 2px solid #e6e6e6;
+}
+.form_button a span{
+	margin:0;
+	padding:0;
+}
+.form_field input, .form_field textarea{
+	background:#FFF;
+	color:#000;
+	border: 1px solid #D4D4D4;
+}

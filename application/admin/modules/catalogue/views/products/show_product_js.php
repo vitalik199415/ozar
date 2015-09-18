@@ -1,0 +1,10 @@
+<?php
+if(isset($show_products_block_id))
+{
+?>
+<script>
+$('#<?=$show_products_block_id?>').gbc_show_product();
+</script>
+<?
+}
+?>

@@ -1,0 +1,337 @@
+.grid_block{
+text-align:left;
+margin:10px;
+position:relative;
+background:none;
+z-index:0;
+}
+fieldset .grid_block{
+margin:0;
+}
+.grid_table{
+background:#333333;
+width:100%;
+border:4px solid #333333;
+color:#EEEEEE;
+text-align:left;
+font-size:13px;
+}
+/*сортировка*/
+.grid_table .field_name{
+background:#686868;
+font-size:13px;
+line-height:15px;
+color:#FFFFFF;
+}
+.grid_table .field_name td{
+padding:3px 0 3px 0;
+}
+.grid_table .field_name td .normal{
+background:url(/designadmin/grid/field_title_c.jpg) repeat-x top;
+height:33px;
+width:100%;
+}
+.grid_table .field_name td .normal .l{
+background:url(/designadmin/grid/field_title_l.jpg) no-repeat;
+height:33px;
+width:4px;
+float:left;
+}
+.grid_table .field_name td .normal .r{
+background:url(/designadmin/grid/field_title_r.jpg) no-repeat;
+height:33px;
+width:4px;
+float:right;
+}
+.grid_table .field_name td .normal .cont{
+padding:8px 7px 0 7px;
+margin:0px;
+display:block;
+}
+.grid_table .field_name td .active{
+background:url(/designadmin/grid/field_title_act_c.jpg) repeat-x top;
+height:33px;
+width:100%;
+}
+.grid_table .field_name td .active .l{
+background:url(/designadmin/grid/field_title_act_l.jpg) no-repeat;
+height:33px;
+width:4px;
+float:left;
+}
+.grid_table .field_name td .active .r{
+background:url(/designadmin/grid/field_title_act_r.jpg) no-repeat;
+height:33px;
+width:4px;
+float:right;
+}
+.grid_table .field_name td .active .cont{
+padding:8px 7px 0 12px;
+margin:0px;
+display:block;
+}
+.grid_table .field_name td .sorting{
+float:right;
+width:40px;
+padding:10px 0 0 0;
+}
+.grid_table .field_name td .sorting #Dnone{
+display:none;
+}
+.grid_table .field_name td .sorting .down{
+background:url(/designadmin/grid/strel_down.png) no-repeat left;
+display:block;
+width:16px;
+height:13px;
+cursor:pointer;
+float:right;
+margin:0 2px 0 2px;
+}
+.grid_table .field_name td .sorting .down:hover{
+background:url(/designadmin/grid/strel_down.png) no-repeat right;
+}
+.grid_table .field_name td .sorting .up{
+background:url(/designadmin/grid/strel_up.png) no-repeat right;
+display:block;
+width:16px;
+height:13px;
+cursor:pointer;
+float:right;
+margin:0 2px 0 2px;
+}
+.grid_table .field_name td .sorting .up:hover{
+background:url(/designadmin/grid/strel_up.png) no-repeat left;
+}
+/*----------сортировка---------*/
+/*Поиск*/
+.field_search{
+background:#686868;
+}
+.field_search td{
+background:#333333;
+border-bottom:2px solid #686868;
+border-right:1px solid #686868;
+}
+.field_search td div{
+padding:3px 5px;
+color:#EEEEEE;
+}
+.field_search td div .input, .input_interval{
+margin:4px 0 4px 0;
+padding:0px;
+text-align:center;
+}
+select, input{
+font-size:12px;
+border:1px solid #999999;
+background:#555555;
+color:#EEEEEE;
+}
+.field_search td div .input input, .field_search td div .input select{
+height:18px;
+width:70%;
+background:#555555;
+color:#EEEEEE;
+font-size:12px;
+border:1px solid #999999;
+}
+.field_search td div .input_interval input{
+height:18px;
+width:60%;
+background:#555555;
+color:#EEEEEE;
+font-size:10px;
+border:1px solid #999999;
+}
+.field_search td div .search_button{
+display:inline-block;
+padding:2px 8px;
+margin:1px 2px;
+background:#333333;
+border:2px solid #666666;
+color:#FFFFFF;
+font-size:15px;
+text-decoration:none;
+}
+.field_search td div .search_button:hover{
+display:inline-block;
+background:#000000;
+border:2px solid #555555;
+color:#FF9900;
+}
+/*--------------Поиск--------------*/
+/*Данные*/
+.field_data{
+background:#444444;
+color:#FFFFFF;
+}
+.field_data_d{
+background:#333333;
+color:#FFFFFF;
+}
+
+.field_data1{
+background:#303030;
+}
+.field_data2{
+background:#383838;
+}
+.field_data3{
+background:#3F3F3F;
+}
+.field_data4{
+background:#484848;
+}
+.field_data5{
+background:#4F4F4F;
+}
+
+.field_data_hover{
+background:#332818;
+}
+
+.field_data_checked{
+color:#FF9900;
+}
+.field_data td{
+border-right:1px solid #686868;
+border-bottom:2px solid #686868;
+}
+.field_data td div{
+padding:2px 5px 2px 5px;
+font-size:12px;
+}
+/*------------Данные---------------*/
+/*Разбивка на страницы*/
+.grid_block .pages_block{
+background:#444444;
+border:4px solid #333333;
+margin:5px 0 5px 0;
+padding:0;
+font-size:13px;
+color:#FFFFFF;
+text-align:left;
+}
+.grid_block .pages_block .border_grey{
+padding:4px 8px 4px 8px;
+border:2px solid #666666;
+}
+.grid_block .pages_block .page_title{
+color:#DDDDDD;
+font-size:16px;
+float:left;
+margin:0 5px 0 10px;
+line-height:17px;
+}
+.grid_block .pages_block .page_title_rb{
+color:#DDDDDD;
+font-size:15px;
+float:left;
+margin:0 5px 0 10px;
+padding:0 15px 0 0;
+line-height:17px;
+border-right:2px solid #888888;
+}
+.grid_block .pages_block .page_title_rb select{
+width:60px;
+}
+.grid_block .pages_block .page{
+display:block;
+color:#FFFFFF;
+font-weight:bold;
+float:left;
+margin:0 6px 0 6px;
+padding:0px;
+text-decoration:none;
+line-height:16px;
+}
+.grid_block .pages_block .page:hover{
+text-decoration:underline;
+color:#FF9900;
+padding:1px 0 0 0;
+}
+.grid_block .pages_block .page_act{
+display:block;
+color:#AAAAAA;
+font-weight:bold;
+float:left;
+margin:0 6px 0 6px;
+padding:1px 0 0 0;
+text-decoration:none;
+cursor:default;
+font-size:15px;
+line-height:17px;
+}
+.grid_block .pages_block .point{
+float:left;
+margin:0 5px 0 5px;
+cursor:default;
+}
+/*-----------Разбивка на страницы-------------*/
+/*Дейстия с выбраными пунктами*/
+.select_action_block{
+background:#444444;
+border:4px solid #333333;
+margin:3px 0px;
+}
+.select_action_block .border{
+border:2px solid #666666;
+padding:3px 4px;
+}
+.select_action_block .border .select{
+float:right;
+margin:0 10px;
+}
+.select_action_block .border .select select{
+width:auto;
+height:22px;
+border:1px solid #999999;
+padding:2px 0 0 0px;
+margin:2px 0 0 0;
+}
+.select_action_block .border .select select option{
+padding:1px 20px 2px 5px;
+}
+.select_action_block .border .button{
+float:right;
+margin:0 10px 0 0;
+}
+.select_action_block .border .button a{
+display:block;
+background:#333333;
+border:2px solid #777777;
+color:#DDDDDD;
+text-decoration:none;
+padding:2px 7px;
+font-weight:bold;
+letter-spacing:2px;
+}
+.select_action_block .border .button a:hover{
+background:#000000;
+color:#FF9900;
+}
+.select_action_block .border .text{
+color:#FFFFFF;
+font-size:12px;
+letter-spacing:0.5px;
+float:right;
+margin:0 5px 0 0;
+padding:4px 0 0 0;
+}
+.select_action_block .border .select_all{
+font-size:13px;
+float:left;
+padding:4px 0 0 0;
+margin:0 0 0 10px;
+color:#FFFFFF;
+}
+.select_action_block .border .select_all a{
+text-decoration:none;
+}
+/*-------------Дейстия с выбраными пунктами-----------*/
+/*Кнопки*/
+.grid_buttons{
+margin:5px 0 5px 0;
+text-align:right;
+}
+/*------------------------Кнопки-----------------*/

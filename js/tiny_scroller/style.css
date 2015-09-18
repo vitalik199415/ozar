@@ -1,0 +1,11 @@
+* {margin:0; padding:0; outline:0}
+body {font:12px Verdana,Arial; background:#bbb}
+h1 {font:26px Georgia,Verdana}
+p {line-height:1.4; margin-top:10px}
+
+#wrapper {width:400px; height:200px; margin:40px auto; background:#fff; border-top:4px solid #eee; border-left:4px solid #eee; padding:20px}
+#scroll {position:relative; width:400px; height:200px; overflow:auto}
+#scrollcontent {position:absolute; width:375px; z-index:200}
+#scrollbar {float:right; position:relative; display:none; width:15px; height:200px; z-index:100; background:url(images/scroll-bg.gif)}
+.scroller {position:absolute; top:0; width:15px; cursor:pointer; background-color:#ccc; background-image:url(images/scroll-arrows.gif); background-position:50% 50%; background-repeat:no-repeat}
+.buttonclick {background-color:#bbb}

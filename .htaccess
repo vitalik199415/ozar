@@ -1,0 +1,307 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php
+
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^(.*)/$ $1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?fyrnityra-optom\.com\.ua
+RewriteRule ^(.*)$ http://tago.com.ua/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-rejuvenating-cosmetics-Dekrei   /category-rejuvenating-cosmetics-Dekrei [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-respiratory-system   /category-respiratory-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-other   /category-other [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-other   /category-other [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-medical-ointments-balms   /category-medical-ointments-balms [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-all-massage   /category-all-massage [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-healing-teas   /category-healing-teas [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-series-for-hair-101   /category-series-for-hair-101 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-treatment-of-psoriasis   /category-treatment-of-psoriasis [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-dermis   /category-dermis [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-central-nervous-system   /category-central-nervous-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-vision   /category-vision [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-circulatory-system   /category-circulatory-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-urogenital   /category-urogenital [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-musculoskeletal   /category-musculoskeletal [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-drygoe  /category-drygoe [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-immune-system  /category-immune-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-alimentary-system  /category-alimentary-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-hair  /category-hair [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-womens-health  /category-womens-health [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-mens-health  /category-mens-health [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-medical-plasters  /category-medical-plasters [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-chinese-medicine  /category-chinese-medicine [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-the-endocrine-system  /category-the-endocrine-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-masks-dizao  /category-masks-dizao [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-cosmetics-series-olive /category-cosmetics-series-olive [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-products_by_category  /category-products_by_category [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^m  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^mobile  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-circulator  /category-circulator [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-alimentary  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^category-products_b  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^category-products_b  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^product-100  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^product-15  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^product-222  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^product-222  / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-cosmetics-from-demodex-acne-acne  /category-cosmetics-from-demodex-acne-acne [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-respiratory-system  /category-respiratory-system [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?demodex-complex\.com\.ua 
+RewriteRule ^categorie-respiratory-system  /category-respiratory-system [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^(www\.)?imperia\.cv\.ua
+RewriteRule   ^(.*)$   http://chista-sila.cv.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^(.*)/lang-ua/$  http://ozar.com.ua/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-ricoss-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-redmen-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-walles-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-cen&cor-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-levistrauss   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-wrangler   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-lvs-klassik   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-deseo-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-dsquared-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-diesel-Jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-prawn-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-missouri-jeans   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?xn----ctbfikcfzfk1af6k\.com\.ua 
+RewriteRule ^category-company-manufacturers   / [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-new-items-2014  http://ozar.com.ua/category-mens-jeanswear [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-long-sleeve http://ozar.com.ua/category-mens-tshirts [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-shirt-with-short-sleeve http://ozar.com.ua/category-shirts [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-long-sleeve-shirts http://ozar.com.ua/category-shirts [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-youth-sweaters-spring  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-classic-mens-sweater-spring  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-classic-mens-sweater-spring  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-jogging-sweatshirts  http://ozar.com.ua/category-batch-file-hoodies [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-golfs-vest-ests  http://ozar.com.ua/category-golfs-vest [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-trowels-windbreaker-bike  http://ozar.com.ua/category-batch-file-hoodies [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-sports-jackets-for-men  http://ozar.com.ua/category-batch-file-hoodies [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-classic-men-sweater  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Thick-knit_sweaters  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Fine-knit_sweater  http://ozar.com.ua/category-youth-mens-sweaters-and-pullovers [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Dawsin-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-denim-breeches  http://ozar.com.ua/category-mens-jeans-breeches [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-jeans-ricoss  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-classic-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-youth-stylish-mens-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-large-size-mens-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Warm-mens-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Red-Man-jeans  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-jeans-wallys  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-Brand  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-CenCor  http://ozar.com.ua/category-mens-jeans [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-trowel-windbreaker-bike  http://ozar.com.ua/category-batch-file-hoodies [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-mens-thermal-underwear  http://ozar.com.ua/category-mens-jeanswear [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^categorie-hats-for-men  http://ozar.com.ua/category-baseball-caps [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-baseball-caps  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-size54  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-Size-55-57  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-Size-57-58  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-reperskie-caps  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-camouflage  http://ozar.com.ua/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?ozar\.com\.ua
+RewriteRule ^category-children-teen-caps  http://ozar.com.ua/ [R=301,L]
+
+
+#</IfModule>
+#<IfModule !mod_rewrite.c>
+#ErrorDocument 404 /index.php
+#</IfModule>
+
+Options +FollowSymLinks
+Options -Indexes
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+#RewriteRule ^(.*)/$ $1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond $1 !^(index\.php|images|robots\.txt|gbcjs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>

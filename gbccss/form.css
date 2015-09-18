@@ -1,0 +1,229 @@
+@charset "utf-8";
+.main_form_block{
+margin:10px;
+}
+.main_form_block .fixed_top_button{
+position: fixed;
+top: 0;
+right: 10px;
+margin:0;
+padding:0;
+z-index:99;
+display:block;
+opacity: 0.9;
+}
+.form_block{
+background:#333333;
+text-align:left;
+margin:10px 0px;
+border:4px solid #222222;
+}
+.form_block .form_block_padding{
+padding:7px;
+}
+/*Табы*/
+.form_block .tabs_block{
+float:left;
+width:20%;
+background:#555555;
+border-top:5px solid #555555;
+border-bottom:5px solid #555555;
+}
+.form_block .tabs_block ul{
+list-style:none; 
+margin:0 !important; 
+padding:0;
+border-top:1px solid #555555;
+border-bottom:1px solid #555555;
+border-left:6px solid #555555;
+}
+.form_block .tabs_block .href{
+background:#999999;
+color:#000000;
+font-size:15px;
+font-weight:bold;
+display:block;
+padding:8px 18px;
+text-decoration:none;
+text-align:center;
+border:3px solid #6F6F6F;
+border-top:2px solid #6F6F6F;
+border-bottom:2px solid #6F6F6F;
+}
+.form_block .tabs_block .href:hover{
+background:#222222;
+color:#FF9900;
+}
+.form_block .tabs_block .current{
+background:#333333;
+color:#FFFFFF;
+border-right:3px solid #333333;
+}
+.form_block .tabs_block .current:hover{
+background:#333333;
+color:#FFFFFF;
+}
+
+.form_block .tabs_block .error{
+color:#dd3333;
+}
+/*---------------Табы--------------*/
+/*Блоки табов*/
+.form_block .block{
+float:right;
+width:79%;
+}
+.form_block .block .block_padding{
+margin:0 0 0 10px;
+}
+.form_block .block .block_padding .field_block{
+width:100%;
+}
+/*------------Блоки табов---------------*/
+/*Поля ввода*/
+.form_block .block_w_field_main{
+margin:0px 0 10px 0;
+border:2px solid #222222;
+}
+.form_block .block_w_field{
+background:#555555;
+padding:5px 6px;
+border:1px solid #999999;
+}
+.form_block .block_w_field_bg{
+background:#444444;
+padding:5px 6px;
+border:1px solid #888888;
+}
+.form_block .block_w_field label, .form_block .block_w_field_bg label{
+float:left;
+width:25%;
+text-align:left;
+display:block;
+color:#FFFFFF;
+font-size:13px;
+line-height:18px;
+}
+.form_block .block_w_field .field, .form_block .block_w_field_bg .field{
+float:right;
+width:73%;
+text-align:left;
+display:block;
+}
+.form_block .block_w_field .field input, .form_block .block_w_field .field select, .form_block .block_w_field .field textarea{
+width:100%;
+border:1px solid #333333;
+background:#FFFFFF !IMPORTANT;
+color:#000000;
+font-size:14px;
+}
+.form_block .block_w_field_bg .field input, .form_block .block_w_field_bg .field select, .form_block .block_w_field_bg .field textarea{
+width:100%;
+border:1px solid #333333;
+background:#EEEEEE !IMPORTANT;
+color:#000000;
+font-size:14px;
+}
+
+.form_block .block_w_field .field input[readonly], .form_block .block_w_field .field select[readonly], .form_block .block_w_field .field textarea[readonly]{
+background:#BBBBBB !IMPORTANT;
+cursor:default;
+}
+.form_block .block_w_field_bg .field input[readonly], .form_block .block_w_field_bg .field select[readonly], .form_block .block_w_field_bg .field textarea[readonly]{
+background:#BBBBBB !IMPORTANT;
+cursor:default;
+}
+
+.form_block .block_w_field .field input.error, .form_block .block_w_field .field select.error, .form_block .block_w_field .field textarea.error{
+border:1px solid #990000;
+background:#FF9999 !IMPORTANT;
+color:#000000;
+}
+.form_block .block_w_field_bg .field input.error, .form_block .block_w_field_bg .field select.error, .form_block .block_w_field_bg .field textarea.error{
+border:1px solid #990000;
+background:#FF9999 !IMPORTANT;
+color:#000000;
+}
+.form_block .block_w_field .field label.error, .form_block .block_w_field .field label.error, .form_block .block_w_field_bg .field label.error, .form_block .block_w_field_bg .field label.error{
+color:#FF9999;
+padding:2px 0 0 2px;
+font-size:13px;
+width:100%;
+}
+/*--------------Поля ввода---------------*/
+/*Языковые или другие табы*/
+.form_block .block .langs_tabs{
+text-align:left;
+}
+.form_block .block .langs_tabs ul{
+list-style:none; 
+margin:0 !important; 
+padding:0;
+}
+.form_block .block .langs_tabs ul li{
+float:left;
+text-indent:0;
+padding:0;
+margin:0 5px 0 0 !important;
+list-style-image:none !important; 
+}
+.form_block .block .langs_tabs ul li .href{
+background:#999999;
+border:4px solid #333333;
+color:#000000;
+font-size:15px;
+font-weight:bold;
+display:block;
+padding:10px 45px;
+text-decoration:none;
+text-align:center;
+border-bottom:4px solid #555555;
+}
+.form_block .block .langs_tabs ul li .href:hover{
+background:#222222;
+color:#FF9900;
+}
+.form_block .block .langs_tabs ul li .current{
+background:#555555;
+color:#FFFFFF;
+border-bottom:#555555 4px solid;
+}
+.form_block .block .langs_tabs ul li .current:hover{
+background:#555555;
+color:#FFFFFF;
+border-bottom:#555555 4px solid;
+}
+
+
+.form_block .block .langs_tabs_block{
+background:#555555;
+}
+.form_block .block .langs_tabs_block .langs_tabs_block_padding{
+padding:5px 10px 5px 10px;
+}
+/*--------------Языковые или другие табы---------------*/
+
+.main_form_block .form_buttons{
+text-align:right;
+background:#333333;
+border:4px solid #222222;
+}
+.main_form_block .form_buttons .def_buttons{
+border:2px solid #555555;
+padding:5px 10px;
+}
+/*Fieldset Legend*/
+.form_block fieldset{
+border:#999999 3px solid;
+padding:10px;
+margin:5px 0 15px 0;
+text-align:left;
+}
+.form_block fieldset legend{
+font-size:18px;
+border:#999999 3px solid;
+color:#FFFFFF;
+padding:4px 8px;
+background:#333333;
+}
+/*--------------Fieldset Legend---------------*/

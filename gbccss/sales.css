@@ -1,0 +1,19 @@
+.order_products_table{
+border:1px solid #999999;
+width:100%;
+}
+.order_products_table th{
+border:1px solid #999999;
+vertical-align:middle;
+padding:5px 10px;
+font-size:20px;
+line-height:20px;
+font-weight:bold;
+}
+.order_products_table td{
+border:1px solid #999999;
+vertical-align:middle;
+padding:2px 5px;
+font-size:14px;
+line-height:14px;
+}

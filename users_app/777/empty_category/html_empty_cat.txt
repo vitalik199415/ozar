@@ -1,0 +1,14 @@
+<div class="empty_category">
+                <div class="empty_category_pic"></div>
+                <div class="empty_category_text">Категория на стадии заполнения</div>
+                <div class="reg_cat_text">
+                    *при регистрации на нашем сайте Вы получаете разовою скидку на первую покупку в размере: <br>
+                    <span>-2%</span> 
+                    <a id="m-customer-reg" href="#">Зарегистрироваться <i class="icon-group"></i></a>
+                </div>
+            </div>
+<script>
+     $('#m-customer-reg').on('click', function(event) {
+      $('#customer_registration').trigger('click');
+     });
+    </script>

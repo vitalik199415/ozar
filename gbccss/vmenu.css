@@ -1,0 +1,168 @@
+/* navigation */
+#multi-ddm, #multi-ddm ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+#multi-ddm li {
+	float:left;
+	padding:0px !IMPORTANT;
+	margin:0px !IMPORTANT;
+	position:relative;
+}
+#multi-ddm li li {
+	float: none;
+}	
+#multi-ddm li a {
+	margin:0px !IMPORTANT;
+	display: block;
+	text-align:left;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	background:url(/designadmin/menu_polos.jpg) no-repeat right top;
+	padding:0 10px 0 12px;
+	font-size:13px; line-height:13px;
+}
+#multi-ddm li a:hover {
+	background:url(/designadmin/menu_polos.jpg) no-repeat right bottom;
+}
+
+#multi-ddm li a p{
+margin:0px;
+padding:10px 0 13px 0;
+}
+
+#multi-ddm li ul a {
+	background:url(/designadmin/vmenu_rep.jpg) repeat-x top;
+	font-size:12px;
+	line-height:12px;
+	font-weight:normal;
+	border:1px solid #333333;
+}
+#multi-ddm li ul a:hover {
+	background:url(/designadmin/vmenu_rep.jpg) repeat-x bottom;
+}
+	
+#multi-ddm li ul a p {
+	padding:7px 0 7px 0;
+}	 
+
+#multi-ddm li a.parent-hover {
+	
+	
+}
+
+#multi-ddm li ul {
+	display: none;
+	list-style: none;
+	position: absolute;
+	margin: 0;
+	z-index: 90;
+	padding: 0;
+	width:100%;
+}
+
+#multi-ddm li ul li ul {
+	margin: -28px 0 0 0;
+	margin-left:100%;
+	position: absolute;
+}
+
+#multi-ddm span {
+	float: right;
+}
+
+#multi-ddm .str p{
+	background:url(/designadmin/vmenu_strel.png) right no-repeat;
+}
+
+
+
+
+/*
+#nav li.hover {
+	border-bottom:1px solid #01729d;
+}
+#nav ul li {
+	padding:0;
+	float:none;
+	border:none;
+	display:block;
+}
+#nav li.hover li {border:none;}
+#nav li div {
+	position:absolute;
+	top:15px;
+	left:-9999px;
+	width:100px;
+	z-index:999;
+}
+#nav li.hover div {left:0;}
+
+.vmenu li {
+	margin-right:0px !important;
+	border:none !important;
+}
+.vmenu div {width:200px;}
+.vmenu a {
+	font-size:14px;
+	line-height:16px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	height:36px;
+	display:block;
+	
+}
+.vmenu a p{
+	margin:0px;
+	padding:8px 25px 12px 15px;
+	text-align:left;
+	background:url(/admin/designadmin/menu_polos.jpg) no-repeat right;
+	display:block;	
+}
+.vmenu a:before{
+background:url(/admin/designadmin/menu_rep_hover.jpg);
+}
+.vmenu a p:before{
+background:url(/admin/designadmin/menu_polos.jpg) no-repeat right;
+}
+
+
+.vmenu ul {
+	border:1px solid #333333;
+}
+.vmenu .hover a {background:url(/admin/designadmin/menu_rep_hover.jpg);}
+.vmenu .hover a p{background:url(/admin/designadmin/menu_polos_hover.jpg) no-repeat right;}
+.vmenu div li {margin-right:0 !important;}
+.vmenu div {
+	width:180px;
+	top:36px !important;
+	text-align:left;
+}
+.vmenu div a {
+background:url(/admin/designadmin/vmenu_rep.jpg) repeat-x !important;
+font-size:13px;
+line-height:13px;
+color:#DDDDDD;
+font-weight:normal;
+text-decoration:none;
+display:block;
+height:26px;
+border:1px solid #333333;
+}
+.vmenu div a p{
+margin:0px !important;
+padding:5px 0 0 10px !important;
+background:none  !important;
+}
+.vmenu div a:before{
+background:url(/admin/designadmin/vmenu_rep_hover.jpg) repeat-x !important;
+}
+.vmenu div a:hover{
+background:url(/admin/designadmin/vmenu_rep_hover.jpg) repeat-x !important;
+color:#FFFFFF;
+border:1px solid #666666;
+}
+*/

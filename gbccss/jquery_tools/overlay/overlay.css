@@ -1,0 +1,64 @@
+.JQ_tools_overlay {
+	display:none;
+	z-index:9001 !IMPORTANT;
+	background:url(/designadmin/overlay/top_panel.png) top repeat-x;
+	background-color:#333333;
+	width:80%;
+	height:80%;
+	text-align:center;
+	position:fixed;
+	margin:auto 10%;
+	left:0;
+	border:4px solid #666666;
+	padding:27px 0 0 0;
+}
+/* close button positioned on upper right corner */
+.JQ_tools_overlay .close{
+	background:url(/designadmin/overlay/i_delete.png) left;
+	position:absolute;
+	right:5px;
+	top:3px;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+}
+.JQ_tools_overlay .close:hover{
+background:url(/designadmin/overlay/i_delete.png) right;
+}
+.JQ_tools_overlay .JQ_tools_overlay_content{
+height:100%;
+overflow:auto;
+}
+
+/* the overlayed element */
+.JQ_tools_overlay_20 {
+	display:none;
+	z-index:9002 !IMPORTANT;
+	background:url(/designadmin/overlay/top_panel.png) top repeat-x;
+	background-color:#333333;
+	width:30%;
+	height:auto;
+	text-align:center;
+	position:fixed;
+	margin:auto 35%;
+	left:0;
+	border:4px solid #666666;
+	padding:27px 0 0 0;
+}
+/* close button positioned on upper right corner */
+.JQ_tools_overlay_20 .close{
+	background:url(/designadmin/overlay/i_delete.png) left;
+	position:absolute;
+	right:5px;
+	top:3px;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+}
+.JQ_tools_overlay_20 .close:hover{
+background:url(/designadmin/overlay/i_delete.png) right;
+}
+.JQ_tools_overlay_20 .JQ_tools_overlay_20_content{
+height:100%;
+overflow:auto;
+}
