@@ -426,7 +426,7 @@ class Madmins extends AG_Model {
                         ->from(self::A_CAT_PERM)
                         ->where(self::ID_M_ADMIN, $this->id_admin)
                         ->get()->result_array();
-        if(count($res) > 0) {
+        if(count($res) == 0) {
             return FALSE;
         }
 

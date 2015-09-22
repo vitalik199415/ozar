@@ -768,12 +768,23 @@ function helper_products_form_build($data = array(), $save_param = '')
 			'html',
 			'<div style="padding:0 0 0 '.($ms['level']*40).'px;">'
 		);
+
+		if(isset($data['data_products_categories_permissions'])) {
+			if(in_array($ms['ID'], $data['data_products_categories_permissions'])) {
+				$options = array();
+			} else {
+				$options = array('disabled' => "disabled");
+			}
+		} else {
+			$options = array();
+		}
+
 		$CI->form->group('categories_block')->add_object(
 			'checkbox',
 			'product_categories['.$ms['ID'].']',
 			$ms['name'],
 			array(
-				'value' => $ms['ID']
+				'option' => array('value' => $ms['ID'],) + $options
 			)
 		);
 		$CI->form->group('categories_block')->add_object(

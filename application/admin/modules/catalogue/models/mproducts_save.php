@@ -356,6 +356,10 @@ class Mproducts_save extends AG_Model
 		$this->load->model('catalogue/mcategories');
 		$data['data_products_categories'] = $this->mcategories->get_categories_tree();
 
+		$this->load->model("sys/madmins");
+		if($cat_perm = $this->madmins->get_cat_perm())
+			$data['data_products_categories_permissions'] = $cat_perm;
+
 		$this->load->model('catalogue/mcurrency');
 		$data['data_default_currency'] = $this->mcurrency->get_default_currency_name();
 

@@ -41,16 +41,27 @@ class Mcategories extends AG_Model
 	public function get_categories_tree()
 	{
 		$this->load->model('sys/madmins');
+		$cat_perm = $this->madmins->get_cat_perm();
+
 		$query = $this	->db->select("A.`".self::ID_CAT."` AS ID, A.`id_parent`, A.`level`, B.`name`")
 						->from("`".self::CAT."` AS A")
 						->join(	"`".self::CAT_DESC."` AS B",
 								"B.`".self::ID_CAT."` = A.`".self::ID_CAT."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 								"left")
 						->where("A.`".self::ID_USERS."`",$this->id_users);
-		if($cat_perm = $this->madmins->get_cat_perm()) $query->where_in("A.`".self::ID_USERS."`", $cat_perm);
+		/*if($cat_perm) $query->where_in("A.`".self::ID_CAT."`", $cat_perm)->or_where_in("A.`id_parent`", $cat_perm);*/
 		$result = $query->get()->result_array();
 		$array = array();
 		$result_array = array();
+
+		/*if($cat_perm) {
+			foreach($result as $key => $ms) {
+				if (!in_array($ms['ID'], $cat_perm)) {
+					unset($result[$key]);
+				}
+			}
+		}*/
+
 		foreach($result as $ms)
 		{
 			if($ms['id_parent'] == NULL)
