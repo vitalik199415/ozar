@@ -201,7 +201,7 @@ function helper_permissions_modules_form_build($data = array(), $save_param = ''
         'perm[$][alias]',
         'Идентификатор правила:',
         array(
-            'option'	=> array('class' => $form_id.'_perm_alias', 'maxlength' => '20')
+            'option'	=> array('class' => $form_id.'_perm_alias', 'maxlength' => '40')
         )
     );
 

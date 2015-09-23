@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5d384ea-93e8-4875-967c-584f95c988f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/helpers/catalogue/categories_products_helper.php" afterPath="$PROJECT_DIR$/application/admin/helpers/catalogue/categories_products_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php" afterPath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php" afterPath="$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php" afterPath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_comments.php" afterPath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_comments.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php" afterPath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_similar.php" afterPath="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_similar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/modules/sys/helpers/permissions_modules_helper.php" afterPath="$PROJECT_DIR$/application/admin/modules/sys/helpers/permissions_modules_helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ozar-live.iws" />
@@ -31,8 +33,18 @@
       <file leaf-file-name="morders.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/modules/sales/models/morders.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="-6.0">
               <caret line="1533" column="44" selection-start-line="1533" selection-start-column="44" selection-end-line="1533" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="madmins.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.62963">
+              <caret line="437" column="5" selection-start-line="437" selection-start-column="5" selection-end-line="437" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -41,11 +53,11 @@
       <file leaf-file-name="mproducts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333">
-              <caret line="88" column="51" selection-start-line="87" selection-start-column="8" selection-end-line="88" selection-end-column="51" />
+            <state vertical-scroll-proportion="-3.074074">
+              <caret line="87" column="51" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="51" />
               <folding>
-                <marker date="1442998776045" expanded="true" signature="17064:17116" placeholder="..." />
-                <marker date="1442998776045" expanded="true" signature="17329:17383" placeholder="..." />
+                <marker date="1443023847397" expanded="true" signature="17171:17223" placeholder="..." />
+                <marker date="1443023847397" expanded="true" signature="17436:17490" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -54,35 +66,54 @@
       <file leaf-file-name="mproducts_related.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.333333">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state vertical-scroll-proportion="-7.296296">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mcategories_products.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php">
+      <file leaf-file-name="mproducts_similar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_similar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27422002">
-              <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+            <state vertical-scroll-proportion="-4.754717">
+              <caret line="32" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mproducts_comments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.4716983">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permissions_modules_helper.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/helpers/permissions_modules_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.11001642">
+              <caret line="203" column="86" selection-start-line="203" selection-start-column="86" selection-end-line="203" selection-end-column="86" />
               <folding>
-                <marker date="1443006721080" expanded="true" signature="4582:4591" placeholder="..." />
+                <marker date="1443026654350" expanded="true" signature="5602:5741" placeholder="..." />
+                <marker date="1443026654350" expanded="false" signature="5619:5640" placeholder="..." />
+                <marker date="1443026654350" expanded="true" signature="5676:5741" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="categories_products_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/helpers/catalogue/categories_products_helper.php">
+      <file leaf-file-name="mcategories_products.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
               <folding>
-                <marker date="1443005867943" expanded="true" signature="3970:3999" placeholder="..." />
-                <marker date="1443005867943" expanded="true" signature="4318:4347" placeholder="..." />
-                <marker date="1443005867943" expanded="true" signature="6212:6241" placeholder="..." />
-                <marker date="1443005867943" expanded="true" signature="6562:6591" placeholder="..." />
+                <marker date="1443006721080" expanded="true" signature="4582:4591" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -91,7 +122,7 @@
       <file leaf-file-name="admins_helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/helpers/admins_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="280" column="14" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
               <folding>
                 <marker date="1442499123614" expanded="true" signature="6031:6082" placeholder="..." />
@@ -104,45 +135,9 @@
       <file leaf-file-name="mcategories.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.666666">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orders_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/modules/sales/helpers/orders_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-79.333336">
-              <caret line="1024" column="70" selection-start-line="1024" selection-start-column="70" selection-end-line="1024" selection-end-column="70" />
-              <folding>
-                <marker date="1442420592760" expanded="true" signature="12798:12880" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="24171:24186" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="24451:24533" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="41574:41595" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="41621:41652" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="41726:41747" placeholder="..." />
-                <marker date="1442420592760" expanded="true" signature="41783:41890" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products_save_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/helpers/catalogue/products_save_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="52.666668">
-              <caret line="518" column="7" selection-start-line="518" selection-start-column="7" selection-end-line="518" selection-end-column="7" />
-              <folding>
-                <marker date="1442918418765" expanded="true" signature="9527:9663" placeholder="..." />
-                <marker date="1442918418765" expanded="false" signature="9544:9565" placeholder="..." />
-                <marker date="1442918418765" expanded="true" signature="9601:9663" placeholder="..." />
-                <marker date="1442918418765" expanded="true" signature="27165:27303" placeholder="..." />
-                <marker date="1442918418765" expanded="false" signature="27182:27203" placeholder="..." />
-                <marker date="1442918418765" expanded="true" signature="27239:27303" placeholder="..." />
-                <marker date="1442918418765" expanded="false" signature="35831:35860" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,14 +178,17 @@
         <option value="$PROJECT_DIR$/application/admin/core/AG_Controller.php" />
         <option value="$PROJECT_DIR$/application/admin/modules/sys/helpers/admins_helper.php" />
         <option value="$PROJECT_DIR$/CI_phpStorm.php" />
-        <option value="$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php" />
         <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_save.php" />
         <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories.php" />
         <option value="$PROJECT_DIR$/application/admin/helpers/catalogue/products_save_helper.php" />
-        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php" />
-        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php" />
         <option value="$PROJECT_DIR$/application/admin/helpers/catalogue/categories_products_helper.php" />
         <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_similar.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_comments.php" />
+        <option value="$PROJECT_DIR$/application/admin/modules/sys/helpers/permissions_modules_helper.php" />
       </list>
     </option>
   </component>
@@ -248,8 +246,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1042,6 +1038,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1125,7 +1123,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27705976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28109854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1159,39 +1157,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="42" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/frontend_2.0/modules/catalogue/models/mproducts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="597" column="5" selection-start-line="597" selection-start-column="5" selection-end-line="597" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gbcjs/modules_js/sales/jquery.gbc_orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3456">
-          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gbcjs/modules_js/catalogue/products/jquery.gbc_products_img_upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3804878">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/frontend_2.0/modules/sales/views/orders/create_order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5102041">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/frontend_2.0/modules/sales/views/discount_coupons/discount_coupons_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1445,71 +1415,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024630541">
-          <caret line="429" column="25" selection-start-line="429" selection-start-column="25" selection-end-line="429" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/modules/sales/models/morders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1533" column="44" selection-start-line="1533" selection-start-column="44" selection-end-line="1533" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.333333">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/helpers/catalogue/products_save_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="52.666668">
+        <state vertical-scroll-proportion="0.0">
           <caret line="518" column="7" selection-start-line="518" selection-start-column="7" selection-end-line="518" selection-end-column="7" />
           <folding>
-            <marker date="1442918418765" expanded="true" signature="9527:9663" placeholder="..." />
-            <marker date="1442918418765" expanded="false" signature="9544:9565" placeholder="..." />
-            <marker date="1442918418765" expanded="true" signature="9601:9663" placeholder="..." />
-            <marker date="1442918418765" expanded="true" signature="27165:27303" placeholder="..." />
-            <marker date="1442918418765" expanded="false" signature="27182:27203" placeholder="..." />
-            <marker date="1442918418765" expanded="true" signature="27239:27303" placeholder="..." />
-            <marker date="1442918418765" expanded="false" signature="35831:35860" placeholder="..." />
+            <marker date="1442918418765" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442918418765" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/modules/sales/helpers/orders_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-79.333336">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1024" column="70" selection-start-line="1024" selection-start-column="70" selection-end-line="1024" selection-end-column="70" />
           <folding>
-            <marker date="1442420592760" expanded="true" signature="12798:12880" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="24171:24186" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="24451:24533" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="41574:41595" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="41621:41652" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="41726:41747" placeholder="..." />
-            <marker date="1442420592760" expanded="true" signature="41783:41890" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1442420592760" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/helpers/catalogue/categories_products_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
           <folding>
-            <marker date="1443005867943" expanded="true" signature="3970:3999" placeholder="..." />
-            <marker date="1443005867943" expanded="true" signature="4318:4347" placeholder="..." />
-            <marker date="1443005867943" expanded="true" signature="6212:6241" placeholder="..." />
-            <marker date="1443005867943" expanded="true" signature="6562:6591" placeholder="..." />
+            <marker date="1443005867943" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443005867943" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443005867943" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443005867943" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1529,40 +1475,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="8.600986">
           <caret line="356" column="71" selection-start-line="356" selection-start-column="71" selection-end-line="356" selection-end-column="71" />
-          <folding>
-            <marker date="1442914257403" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
-            <marker date="1442914257403" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1442914257403" expanded="true" signature="-1:-1" placeholder="SELECT `id` ..." />
-            <marker date="1442914257403" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.666666">
+        <state vertical-scroll-proportion="0.0">
           <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/sales/models/morders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="1533" column="44" selection-start-line="1533" selection-start-column="44" selection-end-line="1533" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/models/madmins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.62963">
+          <caret line="437" column="5" selection-start-line="437" selection-start-column="5" selection-end-line="437" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333">
-          <caret line="88" column="51" selection-start-line="87" selection-start-column="8" selection-end-line="88" selection-end-column="51" />
+        <state vertical-scroll-proportion="-3.074074">
+          <caret line="87" column="51" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="51" />
           <folding>
-            <marker date="1442998776045" expanded="true" signature="17064:17116" placeholder="..." />
-            <marker date="1442998776045" expanded="true" signature="17329:17383" placeholder="..." />
+            <marker date="1443023847397" expanded="true" signature="17171:17223" placeholder="..." />
+            <marker date="1443023847397" expanded="true" signature="17436:17490" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mcategories_products.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27422002">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
           <folding>
             <marker date="1443006721080" expanded="true" signature="4582:4591" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_related.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.296296">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_similar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.754717">
+          <caret line="32" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/models/mpermissions_modules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/catalogue/models/mproducts_comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4716983">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/modules/sys/helpers/permissions_modules_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11001642">
+          <caret line="203" column="86" selection-start-line="203" selection-start-column="86" selection-end-line="203" selection-end-column="86" />
+          <folding>
+            <marker date="1443026654350" expanded="true" signature="5602:5741" placeholder="..." />
+            <marker date="1443026654350" expanded="false" signature="5619:5640" placeholder="..." />
+            <marker date="1443026654350" expanded="true" signature="5676:5741" placeholder="..." />
           </folding>
         </state>
       </provider>

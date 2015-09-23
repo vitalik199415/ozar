@@ -15,6 +15,9 @@ class Mproducts_related extends AG_Model
 	}
 	public function render_product_related_grid()
 	{
+		$this->load->model("sys/madmins");
+		$cat_perm = $this->madmins->get_cat_perm();
+
 		$this->load->library('grid');
 		$this->grid->_init_grid('products_related_grid');
 		$this->grid->db
@@ -24,7 +27,11 @@ class Mproducts_related extends AG_Model
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
-
+		if($cat_perm) {
+			$cat = implode(', ', $cat_perm);
+			$this->grid->db
+				->where("A.`" . self::ID_PR . "` IN (SELECT `id_m_c_products` FROM m_c_productsNcategories WHERE `id_m_c_categories` IN (".$cat.") GROUP BY `id_m_c_products`)", NULL, FALSE);
+		}
 		$this->load->helper('catalogue/products_related_helper');
 		helper_products_related_grid_build($this->grid);
 		
@@ -36,6 +43,7 @@ class Mproducts_related extends AG_Model
 	
 	public function add_related_grid_build($id)
 	{
+
 		$this->load->model('catalogue/mproducts');
 		if(!$this->mproducts->check_isset_pr($id)) return FALSE;
 		

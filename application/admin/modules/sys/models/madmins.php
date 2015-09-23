@@ -337,7 +337,7 @@ class Madmins extends AG_Model {
             }
         } else {
             foreach ($cat_arr as $key => $vall) {
-                $group = array(self::ID_MODULES => $key, self::ID_M_ADMIN => $id_admin);
+                $group = array(self::ID_CAT => $key, self::ID_M_ADMIN => $id_admin);
                 $this->db->insert(self::A_CAT_PERM, $group);
             }
         }

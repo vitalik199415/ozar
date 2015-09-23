@@ -30,6 +30,9 @@ class Mproducts_comments extends AG_Model
             }
         }
 
+		$this->load->model("sys/madmins");
+		$cat_perm = $this->madmins->get_cat_perm();
+
         $this->grid->db
             ->select("A.`".self::ID_PR."` AS ID, A.`sku`, B.`name`, A.`status`, A.`in_stock`, A.`create_date`, A.`update_date`,
                         (SELECT COUNT(*) FROM `".self::PR_COMM."` AS K WHERE K.`".self::ID_PR."` = A.`".self::ID_PR."` AND K.`new_comment` = 1) AS new_comment" )
@@ -40,6 +43,11 @@ class Mproducts_comments extends AG_Model
             //->where("A.`".self::ID_PR."` IN (SELECT DISTINCT `".self::ID_PR."` FROM `".self::PR_COMM."` WHERE `".self::ID_USERS."` = '".$this->id_users."' && `new_comment` = 1)", NULL, FALSE)
 
         ->where("A.`".self::ID_USERS."`", $this->id_users);
+		if($cat_perm) {
+			$cat = implode(', ', $cat_perm);
+			$this->grid->db
+				->where("A.`" . self::ID_PR . "` IN (SELECT `id_m_c_products` FROM m_c_productsNcategories WHERE `id_m_c_categories` IN (".$cat.") GROUP BY `id_m_c_products`)", NULL, FALSE);
+		}
         //->where("A.`".self::ID_PR."` IN (SELECT DISTINCT `".self::ID_PR."` FROM `".self::PR_COMM."` WHERE `".self::ID_USERS."` = '".$this->id_users."' && `new_comment` = 1)", NULL, FALSE);
         if(isset($update_select_types))
         {

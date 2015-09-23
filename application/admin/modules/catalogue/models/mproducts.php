@@ -68,12 +68,11 @@ class Mproducts extends AG_Model
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
-		if($cat_perm)
+		if($cat_perm) {
+			$cat = implode(', ', $cat_perm);
 			$this->grid->db
-				->join(	"`".self::PR_CAT."` AS PR_CAT",
-					"PR_CAT.`".self::ID_PR."` = A.`".self::ID_PR."`",
-					"LEFT")
-				->where_in("PR_CAT.`".self::ID_CAT."`",$cat_perm);
+				->where("A.`" . self::ID_PR . "` IN (SELECT `id_m_c_products` FROM m_c_productsNcategories WHERE `id_m_c_categories` IN (".$cat.") GROUP BY `id_m_c_products`)", NULL, FALSE);
+		}
 		$this->load->helper('catalogue/products_helper');
 		helper_products_grid_build($this->grid);
 
@@ -97,13 +96,11 @@ class Mproducts extends AG_Model
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
-		if($cat_perm)
+		if($cat_perm) {
+			$cat = implode(', ', $cat_perm);
 			$this->grid->db
-				->join(	"`".self::PR_CAT."` AS PR_CAT",
-					"PR_CAT.`".self::ID_PR."` = A.`".self::ID_PR."`",
-					"LEFT")
-				->where_in("PR_CAT.`".self::ID_CAT."`",$cat_perm);
-
+				->where("A.`" . self::ID_PR . "` IN (SELECT `id_m_c_products` FROM m_c_productsNcategories WHERE `id_m_c_categories` IN (".$cat.") GROUP BY `id_m_c_products`)", NULL, FALSE);
+		}
 		$this->load->helper('catalogue/products_helper');
 		helper_products_additionally_grid_build($this->grid);
 
