@@ -64,15 +64,16 @@ class Mproducts extends AG_Model
 		$this->grid->db
 			->select("A.`".self::ID_PR."` AS ID, A.`sku`, B.`name`, A.`status`, A.`in_stock`, A.`create_date`, A.`update_date`")
 			->from("`".self::PR."` AS A")
-			->join(	"`".self::PR_CAT."` AS PR_CAT",
-				"PR_CAT.`".self::ID_PR."` = A.`".self::ID_PR."`",
-				"LEFT")
 			->join(	"`".self::PR_DESC."` AS B",
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
 		if($cat_perm)
-			$this->grid->db->where_in("PR_CAT.`".self::ID_CAT."`",$cat_perm);
+			$this->grid->db
+				->join(	"`".self::PR_CAT."` AS PR_CAT",
+					"PR_CAT.`".self::ID_PR."` = A.`".self::ID_PR."`",
+					"LEFT")
+				->where_in("PR_CAT.`".self::ID_CAT."`",$cat_perm);
 		$this->load->helper('catalogue/products_helper');
 		helper_products_grid_build($this->grid);
 
@@ -84,6 +85,9 @@ class Mproducts extends AG_Model
 
 	public function render_product_additionally_grid()
 	{
+		$this->load->model("sys/madmins");
+		$cat_perm = $this->madmins->get_cat_perm();
+
 		$this->load->library('grid');
 		$this->grid->_init_grid('products_additionally_grid');
 		$this->grid->db
@@ -93,6 +97,12 @@ class Mproducts extends AG_Model
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
+		if($cat_perm)
+			$this->grid->db
+				->join(	"`".self::PR_CAT."` AS PR_CAT",
+					"PR_CAT.`".self::ID_PR."` = A.`".self::ID_PR."`",
+					"LEFT")
+				->where_in("PR_CAT.`".self::ID_CAT."`",$cat_perm);
 
 		$this->load->helper('catalogue/products_helper');
 		helper_products_additionally_grid_build($this->grid);

@@ -102,6 +102,7 @@ function categories_products_incat_grid_build($grid, $cat_id)
 			'type'		 => 'text',
 			'tdwidth'	 => '10%',
 			'option_string' => 'align="center"',
+			'option'	=> array('readonly' => 'readonly')
 		), 'Сорт. вес');
 	$grid->add_column(
 		array(

@@ -95,6 +95,13 @@ class Mcategories_products extends AG_Model
 			->where("C.`".self::ID_CAT."`", $cat_id)->where("A.`".self::ID_USERS."`", $this->id_users)->order_by("C.`new`+0", "DESC");
 		if($settings['products_sort_type'] == 1) $this->grid->db->order_by("C.`sort`+0", "DESC"); else $this->grid->db->order_by("C.`sort`+0");
 
+		$this->load->model("sys/madmins");
+		$cat_perm = $this->madmins->get_cat_perm();
+		$readonly = 'readonly="readonly"';
+		if(is_array($cat_perm) && in_array($cat_id, $cat_perm)) {
+			$readonly = '';
+		}
+
 		$this->load->helper('catalogue/categories_products_helper');
 		categories_products_incat_grid_build($this->grid, $cat_id);
 
@@ -102,7 +109,7 @@ class Mcategories_products extends AG_Model
 		$this->grid->update_grid_data('in_stock',array('0' => 'Нет', '1' => 'Да'));
 		$this->grid->update_grid_data('status',array('0' => 'Нет', '1' => 'Да'));
 		$this->grid->update_grid_data('new',array('0' => 'Нет', '1' => 'Да'));
-		$this->grid->update_grid_data_using_string("sort", "<input type = 'text' style = 'width:90%' name = 'product_sort[$1]' value = '$2'>", array('$1' => 'id_m_c_productsNcategories', '$2' => 'sort'));
+		$this->grid->update_grid_data_using_string("sort", "<input type = 'text' style = 'width:90%' name = 'product_sort[$1]' value = '$2'".$readonly.">", array('$1' => 'id_m_c_productsNcategories', '$2' => 'sort'));
 		return $this->grid->render_grid(TRUE);
 	}
 

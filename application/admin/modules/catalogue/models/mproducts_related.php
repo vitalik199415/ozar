@@ -14,7 +14,7 @@ class Mproducts_related extends AG_Model
 		parent::__construct();
 	}
 	public function render_product_related_grid()
-	{	
+	{
 		$this->load->library('grid');
 		$this->grid->_init_grid('products_related_grid');
 		$this->grid->db
@@ -24,7 +24,7 @@ class Mproducts_related extends AG_Model
 					"B.`".self::ID_PR."` = A.`".self::ID_PR."` && B.`".self::ID_LANGS."` = ".$this->id_langs,
 					"LEFT")
 			->where("A.`".self::ID_USERS."`", $this->id_users);
-		
+
 		$this->load->helper('catalogue/products_related_helper');
 		helper_products_related_grid_build($this->grid);
 		
